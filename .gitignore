@@ -1,6 +1,32 @@
-bin/
-obj/
+# Build outputs
+**/bin/
+**/obj/
+
+# Visual Studio
 .vs/
 *.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# IDE
+.vscode/
+.idea/
+
+# Test outputs
+TestResults/
+*.trx
+
+# Python cache
 __pycache__/
+*.pyc
 .venv/
+venv/
+
+# Temporary files
+*.tmp
+*.log
+
+# Operating system
+.DS_Store
+Thumbs.db
