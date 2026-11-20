@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="src/shared/Shared.csproj" />
-  <Project Path="src/server/Server.csproj" />
-  <Project Path="src/load-generator/LoadGenerator.csproj" />
+	<Project Path="src/shared/Shared.csproj" />
+	<Project Path="src/server/Server.csproj" />
+	<Project Path="src/load-generator/LoadGenerator.csproj" />
 </Solution>

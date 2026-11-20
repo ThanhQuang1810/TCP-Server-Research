@@ -1,10 +1,16 @@
 {
-  "host": "127.0.0.1",
-  "port": 9000,
-  "clients": 50,
-  "payloadBytes": 1024,
-  "warmupSeconds": 5,
-  "durationSeconds": 20,
-  "repetitions": 3,
-  "timeoutSeconds": 5
+  "ExperimentName": "clients-50",
+  "Host": "127.0.0.1",
+  "Port": 9000,
+  "ClientCount": 50,
+  "PayloadSizeBytes": 1024,
+  "WarmupSeconds": 5,
+  "DurationSeconds": 20,
+  "RepeatCount": 3,
+  "ConnectTimeoutMs": 5000,
+  "RequestTimeoutMs": 5000,
+  "CpuSampleIntervalMs": 1000,
+  "TcpNoDelay": true,
+  "ValidateResponse": true,
+  "OutputDirectory": "experiments/raw-data"
 }
