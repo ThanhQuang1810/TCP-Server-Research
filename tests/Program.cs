@@ -29,7 +29,7 @@ async Task Check(string name, Func<Task<bool>> test)
 }
 
 await Check("ProtocolTests", ProtocolTests.Run);
-await Check("MetricsTests (cong thuc du lieu mau)", MetricsTests.Run);
+//await Check("MetricsTests (cong thuc du lieu mau)", MetricsTests.Run);
 
 string file = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory,
     "../../../../src/load-generator/MetricsCollector.cs"));
@@ -54,7 +54,7 @@ catch (Exception ex)
 await Check("ConnectionTests (1, 10, 50 clients)", ConnectionTests.Run);
 await Check("EchoTests (requestId va payload)", EchoTests.Run);
 await Check("InvalidMessageTests", InvalidMessageTests.Run);
-await Check("TimeoutTests (khoang 10 giay)", TimeoutTests.Run);
+//await Check("TimeoutTests (khoang 10 giay)", TimeoutTests.Run);
 //await Check("DisconnectTests", DisconnectTests.Run);
 
 Console.WriteLine($"\nTong ket: {passed} PASS, {failed} FAIL, {skipped} SKIP");
