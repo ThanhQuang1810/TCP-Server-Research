@@ -54,8 +54,8 @@ catch (Exception ex)
 await Check("ConnectionTests (1, 10, 50 clients)", ConnectionTests.Run);
 await Check("EchoTests (requestId va payload)", EchoTests.Run);
 await Check("InvalidMessageTests", InvalidMessageTests.Run);
-//await Check("TimeoutTests (khoang 10 giay)", TimeoutTests.Run);
-//await Check("DisconnectTests", DisconnectTests.Run);
+await Check("TimeoutTests (khoang 10 giay)", TimeoutTests.Run);
+await Check("DisconnectTests", DisconnectTests.Run);
 
 Console.WriteLine($"\nTong ket: {passed} PASS, {failed} FAIL, {skipped} SKIP");
 return failed == 0 ? 0 : 1;
