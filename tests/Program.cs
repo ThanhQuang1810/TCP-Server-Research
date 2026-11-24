@@ -29,7 +29,7 @@ async Task Check(string name, Func<Task<bool>> test)
 }
 
 await Check("ProtocolTests", ProtocolTests.Run);
-//await Check("MetricsTests (cong thuc du lieu mau)", MetricsTests.Run);
+await Check("MetricsTests (cong thuc du lieu mau)", MetricsTests.Run);
 
 string file = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory,
     "../../../../src/load-generator/MetricsCollector.cs"));
